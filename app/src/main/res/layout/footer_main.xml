@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/footer"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:padding="07dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/home_footer"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
+
+        <ImageButton
+            android:id="@+id/library_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:src="@drawable/bookmark" />
+
+        <ImageButton
+            android:id="@+id/compose_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:src="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/update_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+
+            android:src="@drawable/bell" />
+
+
+        <ImageButton
+android:id="@+id/profile_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+
+            android:src="@drawable/profile" />
+</LinearLayout>
+
+
+</RelativeLayout>
+

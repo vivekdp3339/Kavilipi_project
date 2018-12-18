@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //------------Header Code----------
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/header_update_xml" />
+    </LinearLayout>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="2.9"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_view">
+</android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    //------------Footer Code----------
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/footer_main" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

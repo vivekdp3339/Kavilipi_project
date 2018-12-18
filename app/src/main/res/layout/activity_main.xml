@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:weightSum="3"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    //------------Header Code----------
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/header_main" />
+    </LinearLayout>
+
+    //---------Body Code----------
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+        <com.example.asus.kavilipi_project.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:background="@color/colorPrimary"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            ></android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+
+
+
+
+    //------------Footer Code----------
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:id="@+id/footer"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/footer_main" />
+    </LinearLayout>
+
+
+</LinearLayout>
+

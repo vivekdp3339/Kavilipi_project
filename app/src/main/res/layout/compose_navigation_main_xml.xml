@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#738080"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_actionbar"
+            layout="@layout/compose_navigationdrawer_headertoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+
+            <!-- first page-->
+            <include layout="@layout/compose_navigation_oflinedrawer"></include>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/compose_drawer_left"></include>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
+
+
