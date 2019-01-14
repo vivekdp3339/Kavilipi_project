@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Assigning ViewPager View and setting the adapter
         view_pager = (ViewPager) findViewById(R.id.view_pager);
+        Toast.makeText(MainActivity.this, "Exaple", Toast.LENGTH_SHORT).show();
         view_pager.setAdapter(adapter);
 
         // Assiging the Sliding Tab Layout View
