@@ -7,6 +7,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
 
+import org.w3c.dom.Text;
+
 public class Compose_Navigation_main_activity  extends AppCompatActivity implements View.OnClickListener{
     DrawerLayout drawerLayout;
 
@@ -42,4 +44,6 @@ public class Compose_Navigation_main_activity  extends AppCompatActivity impleme
             openLeft();
         }
     }
+
+    public Text;
 }

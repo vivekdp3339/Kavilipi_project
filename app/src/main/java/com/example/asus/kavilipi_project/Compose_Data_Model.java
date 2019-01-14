@@ -27,7 +27,8 @@ public class Compose_Data_Model {
 
 
 
-    public int getImageLogo() {
+    public int getImageLogo()
+    {
         return imageLogo;
     }
 
