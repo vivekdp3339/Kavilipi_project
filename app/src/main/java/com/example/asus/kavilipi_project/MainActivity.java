@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 // My Update
+    // new project
 
     Toolbar toolbar;
     ViewPager view_pager;
